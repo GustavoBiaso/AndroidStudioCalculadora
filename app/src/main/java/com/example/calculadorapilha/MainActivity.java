@@ -2,8 +2,10 @@ package com.example.calculadorapilha;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -13,11 +15,41 @@ import java.util.Stack;
 public class MainActivity extends AppCompatActivity {
 
     private Stack<Integer> stack1 = new Stack<Integer>();
+    Button buttonFatorial, buttonPrimo, buttonFibonacci;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        buttonFatorial=findViewById(R.id.button8);
+        buttonPrimo=findViewById(R.id.button9);
+        buttonFibonacci=findViewById(R.id.button7);
+
+        buttonFatorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Fatorial = new Intent(getApplicationContext(),MainActivity2.class);
+                startActivity(Fatorial);
+            }
+        });
+
+        buttonPrimo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Primo = new Intent(getApplicationContext(),MainActivity3.class);
+                startActivity(Primo);
+            }
+        });
+
+        buttonFibonacci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Fibonacci = new Intent(getApplicationContext(),MainActivity4.class);
+                startActivity(Fibonacci);
+            }
+        });
+
     }
 
     public void Empilha(View view) {
@@ -64,4 +96,6 @@ public class MainActivity extends AppCompatActivity {
         TextView texto = (TextView) findViewById(R.id.textView3);
         texto.setText(stack1.toString());
     }
+
+
 }
