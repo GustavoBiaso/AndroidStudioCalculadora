@@ -15,7 +15,7 @@ import java.util.Stack;
 public class MainActivity extends AppCompatActivity {
 
     private Stack<Integer> stack1 = new Stack<Integer>();
-    Button buttonFatorial, buttonPrimo, buttonFibonacci;
+    Button buttonFatorial, buttonPrimo, buttonFibonacci, buttonBigInt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         buttonFatorial=findViewById(R.id.button8);
         buttonPrimo=findViewById(R.id.button9);
         buttonFibonacci=findViewById(R.id.button7);
+        buttonBigInt=findViewById(R.id.button16);
 
         buttonFatorial.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Fibonacci = new Intent(getApplicationContext(),MainActivity4.class);
                 startActivity(Fibonacci);
+            }
+        });
+
+        buttonBigInt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent BigInt = new Intent(getApplicationContext(),MainActivity5.class);
+                startActivity(BigInt);
             }
         });
 

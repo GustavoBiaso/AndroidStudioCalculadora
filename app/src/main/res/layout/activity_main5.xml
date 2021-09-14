@@ -4,22 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fatorial"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+    tools:context=".MainActivity5">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Número:"
@@ -32,7 +20,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/textView"
+        android:id="@+id/textView18"
         android:layout_width="283dp"
         android:layout_height="51dp"
         android:hint="Digite aqui..."
@@ -45,7 +33,20 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Empilha"
+        android:text="Empilhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+        android:id="@+id/button19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Desempilha"
@@ -58,7 +59,7 @@
         app:layout_constraintVertical_bias="0.172" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Divide"
@@ -71,7 +72,7 @@
         app:layout_constraintVertical_bias="0.291" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Multiplica"
@@ -84,7 +85,7 @@
         app:layout_constraintVertical_bias="0.291" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Menos"
@@ -97,7 +98,7 @@
         app:layout_constraintVertical_bias="0.291" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="Mais"
@@ -109,21 +110,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.291" />
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Empilha"
-        android:text="Empilhar"
+        android:hint="A stack aparecerá aqui!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stack:"
@@ -135,50 +135,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.377" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="A stack aparecerá aqui!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
-
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fibonacci"
+        android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Primo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculadora BigInt"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
